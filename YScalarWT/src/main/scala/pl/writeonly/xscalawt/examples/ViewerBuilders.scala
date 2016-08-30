@@ -21,6 +21,9 @@ import org.eclipse.swt.SWT
 import org.eclipse.jface.viewers.ITreeContentProvider
 import org.eclipse.jface.viewers.IStructuredContentProvider
 import org.eclipse.jface.viewers.Viewer
+import pl.writeonly.xscalawt.XJFace
+import pl.writeonly.xscalawt.ProviderImplicits
+import pl.writeonly.xscalawt.XScalaWT
 
 trait Place {
   def name: String

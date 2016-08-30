@@ -15,11 +15,13 @@ import XScalaWT._
 import XScalaWTBinding._
 import XScalaWTStyles._
 import Assignments._
-
 import org.eclipse.swt.SWT
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.layout._
 import org.eclipse.swt.events._
+import pl.writeonly.xscalawt.XScalaWTStyles
+import pl.writeonly.xscalawt.XScalaWTBinding
+import pl.writeonly.xscalawt.XScalaWT
 
 class LoginView(loginData : LoginViewModel) {
 

@@ -13,11 +13,11 @@ package examples
 
 import XScalaWT._
 import Assignments._
-
 import org.eclipse.swt.layout._
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.events._
 import org.eclipse.swt.SWT
+import pl.writeonly.xscalawt.XScalaWT
 
 /*
  * What's left?

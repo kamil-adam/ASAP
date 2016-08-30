@@ -12,12 +12,12 @@ package pl.writeonly.xscalawt
 package examples.binding
 
 import org.eclipse.swt.widgets.Display
-
 import org.eclipse.jface.databinding.swt.SWTObservables
 import org.eclipse.core.databinding.observable.Realm
-
 import XScalaWT._
 import XScalaWTBinding._
+import pl.writeonly.xscalawt.XScalaWTBinding
+import pl.writeonly.xscalawt.XScalaWT
 
 object DataBindingMain {
   def main(args : Array[String]) = {

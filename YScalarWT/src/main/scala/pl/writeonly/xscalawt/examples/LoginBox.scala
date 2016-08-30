@@ -13,11 +13,11 @@ package examples
 
 import XScalaWT._
 import Assignments._
-
 import org.eclipse.swt.SWT
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.layout._
 import org.eclipse.swt.events._
+import pl.writeonly.xscalawt.XScalaWT
 
 object LoginBox {
   val modifyListener = new ModifyListener {

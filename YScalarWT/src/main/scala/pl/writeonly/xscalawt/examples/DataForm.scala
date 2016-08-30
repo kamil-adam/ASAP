@@ -11,17 +11,16 @@
 package pl.writeonly.xscalawt
 package examples
 
-import XScalaWT._
+import pl.writeonly.xscalawt.XScalaWT._
 import XScalaWTForms._
 import Assignments._
-
 import org.eclipse.swt.SWT
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.layout._
 import org.eclipse.swt.events._
 import org.eclipse.swt.graphics._
-
 import scala.List
+import pl.writeonly.xscalawt.XScalaWTForms
 
 object DataForm {
   
