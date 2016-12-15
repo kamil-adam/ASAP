@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pl.writeonly</groupId>
 
-	<artifactId>YScalarWT</artifactId>
+	<artifactId>ASAP</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
 
@@ -11,14 +11,14 @@
 		<encoding>UTF-8</encoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
-		<scala.version>2.10.0</scala.version>
+		<scala.version>2.11.8</scala.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>pl.writeonly</groupId>
-			<artifactId>XScalarWT</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<artifactId>JSWT</artifactId>
+			<version>2.1-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
