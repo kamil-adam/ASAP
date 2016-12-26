@@ -1,4 +1,4 @@
-package pl.writeonly.xscalawt.examples.temp
+package pl.writeonly.asap.jswt.apps.progression
 
 import pl.writeonly.xscalawt.XScalaWT._
 import org.eclipse.swt.widgets._

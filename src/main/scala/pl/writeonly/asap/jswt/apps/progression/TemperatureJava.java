@@ -1,4 +1,4 @@
-package pl.writeonly.xscalawt.examples.progression;
+package pl.writeonly.asap.jswt.apps.progression;
 
 import org.eclipse.jface.layout.GridDataFactory;
 import org.eclipse.swt.SWT;

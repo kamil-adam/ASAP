@@ -9,7 +9,7 @@
  *     David Orme - initial API and implementation
  *******************************************************************************/
 package pl.writeonly.xscalawt
-package examples.binding
+package pl.writeonly.asap.jswt.apps.binding
 
 import XScalaWT._
 import XScalaWTBinding._
