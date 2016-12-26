@@ -8,8 +8,7 @@
  * Contributors:
  *     David Orme - initial API and implementation
  *******************************************************************************/
-package pl.writeonly.xscalawt
-package pl.writeonly.asap.jswt.examples
+package pl.writeonly.asap.apps.jswt
 
 import XScalaWT._
 import XScalaWTStyles._

@@ -1,4 +1,4 @@
-package pl.writeonly.asap.jswt.apps.progression
+package pl.writeonly.asap.apps.jswt.progression
 
 import org.eclipse.swt.SWT
 import org.eclipse.swt.widgets._

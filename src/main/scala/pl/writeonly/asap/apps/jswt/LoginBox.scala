@@ -8,40 +8,38 @@
  * Contributors:
  *     David Orme - initial API and implementation
  *******************************************************************************/
-package pl.writeonly.xscalawt
-package pl.writeonly.asap.jswt.apps.binding
+package pl.writeonly.asap.apps.jswt
 
 import XScalaWT._
-import XScalaWTBinding._
-import XScalaWTStyles._
 import Assignments._
 import org.eclipse.swt.SWT
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.layout._
 import org.eclipse.swt.events._
-import pl.writeonly.xscalawt.XScalaWTStyles
-import pl.writeonly.xscalawt.XScalaWTBinding
 import pl.writeonly.xscalawt.XScalaWT
 
-class LoginView(loginData : LoginViewModel) {
-
-  def createDialog = {
-    object loginStyles extends Stylesheet(
-	  $[Control] (
-	    background = SWT.COLOR_WHITE
-	  )
-	)
+object LoginBox {
+  val modifyListener = new ModifyListener {
+    def modifyText(e : ModifyEvent) = {
+      println(e.widget.asInstanceOf[Text].getText)
+    }
+  }
+  
+  def main(args : Array[String]) : Unit = {
+    var username : Text = null
     
     val window = shell("Please log in",
-      dataBindingContext(),
+      
+      // username/password group
       group("User information",
         layoutData = new GridData(SWT.FILL, SWT.CENTER, true, false),
         layout = new GridLayout(1, false),
       
         label("Username"),
         text (
+          username=_,       // Save the username Text widget for later, say for data binding...
           layoutData = new GridData(SWT.FILL, SWT.CENTER, true, false),
-          _.textObservable <=> (loginData-->'username)
+          _.addModifyListener(modifyListener)    // or we could data bind right here if we want to...
         ),
 
         label(""),
@@ -49,7 +47,7 @@ class LoginView(loginData : LoginViewModel) {
         label("Password"),
         textPasswd (
           layoutData = new GridData(SWT.FILL, SWT.CENTER, true, false),
-          _.textObservable <=> (loginData-->'password)
+          _.addModifyListener(modifyListener)
         )
       ),
       
@@ -58,18 +56,23 @@ class LoginView(loginData : LoginViewModel) {
         layoutData = new GridData(SWT.CENTER, SWT.CENTER, false, false),
         layout = new GridLayout(2, true),
 
-        button("&OK", {e : SelectionEvent => loginData.login(); closeShell(e) }),
-        button("&Cancel", {e : SelectionEvent => closeShell(e) })
-      )
+        button("OK", 
+          layoutData = new GridData(GridData.HORIZONTAL_ALIGN_FILL),
+          onSelection { println("OK") }
+        ),
+        button("Cancel", 
+          layoutData = new GridData(GridData.HORIZONTAL_ALIGN_FILL),
+          onSelection { println("Cancel") }
+        )
+      ),
+      
+      // Set a default shell size
+      { window =>
+        window.pack
+        val size = window.getSize()
+        window.setSize(250, size.y)
+      }
     )
-    loginStyles.apply(window)
-    
-    window.pack()
-    val size = window.getSize()
-    window.setSize(250, size.y)
-    
-    window
+    runEventLoop(window)
   }
-  
-  private def closeShell(e : SelectionEvent) = e.widget.asInstanceOf[Control].getShell().close()
 }

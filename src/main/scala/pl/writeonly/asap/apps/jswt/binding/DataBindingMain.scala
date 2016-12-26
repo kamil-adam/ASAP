@@ -9,7 +9,7 @@
  *     David Orme - initial API and implementation
  *******************************************************************************/
 package pl.writeonly.xscalawt
-package pl.writeonly.asap.jswt.apps.binding
+package pl.writeonly.asap.apps.jswt.binding
 
 import org.eclipse.swt.widgets.Display
 import org.eclipse.jface.databinding.swt.SWTObservables
