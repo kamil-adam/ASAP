@@ -1,6 +1,6 @@
 package pl.writeonly.asap.apps.jswt.progression
 
-import pl.writeonly.xscalawt.XScalaWT._
+import pl.writeonly.jswt.scaladsl.XScalaWT._
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.layout._
 import org.eclipse.swt.events._

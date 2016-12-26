@@ -8,20 +8,20 @@
  * Contributors:
  *     David Orme - initial API and implementation
  *******************************************************************************/
-package pl.writeonly.xscalawt
+//package pl.writeonly.jswt.scaladsl
 package pl.writeonly.asap.apps.jswt.binding
 
-import XScalaWT._
-import XScalaWTBinding._
-import XScalaWTStyles._
-import Assignments._
+import pl.writeonly.jswt.scaladsl.XScalaWT._
+import pl.writeonly.jswt.scaladsl.XScalaWTBinding._
+import pl.writeonly.jswt.scaladsl.XScalaWTStyles._
+import pl.writeonly.jswt.scaladsl.XScalaWT.Assignments._
 import org.eclipse.swt.SWT
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.layout._
 import org.eclipse.swt.events._
-import pl.writeonly.xscalawt.XScalaWTStyles
-import pl.writeonly.xscalawt.XScalaWTBinding
-import pl.writeonly.xscalawt.XScalaWT
+import pl.writeonly.jswt.scaladsl.XScalaWTStyles
+import pl.writeonly.jswt.scaladsl.XScalaWTBinding
+import pl.writeonly.jswt.scaladsl.XScalaWT
 
 class LoginView(loginData : LoginViewModel) {
 

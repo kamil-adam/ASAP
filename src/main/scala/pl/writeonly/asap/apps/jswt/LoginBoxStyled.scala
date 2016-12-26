@@ -10,15 +10,15 @@
  *******************************************************************************/
 package pl.writeonly.asap.apps.jswt
 
-import XScalaWT._
-import XScalaWTStyles._
-import Assignments._
+import pl.writeonly.jswt.scaladsl.XScalaWT._
+import pl.writeonly.jswt.scaladsl.XScalaWTStyles._
+import pl.writeonly.jswt.scaladsl.XScalaWT.Assignments._
 import org.eclipse.swt.SWT
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.layout._
 import org.eclipse.swt.events._
-import pl.writeonly.xscalawt.XScalaWTStyles
-import pl.writeonly.xscalawt.XScalaWT
+import pl.writeonly.jswt.scaladsl.XScalaWTStyles
+import pl.writeonly.jswt.scaladsl.XScalaWT
 
 object LoginBoxStyled {
   def main(args : Array[String]) : Unit = {

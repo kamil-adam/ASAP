@@ -8,16 +8,16 @@
  * Contributors:
  *     David Orme - initial API and implementation
  *******************************************************************************/
-package pl.writeonly.xscalawt
+//package pl.writeonly.jswt.scaladsl
 package pl.writeonly.asap.apps.jswt.binding
 
 import org.eclipse.swt.widgets.Display
 import org.eclipse.jface.databinding.swt.SWTObservables
 import org.eclipse.core.databinding.observable.Realm
-import XScalaWT._
-import XScalaWTBinding._
-import pl.writeonly.xscalawt.XScalaWTBinding
-import pl.writeonly.xscalawt.XScalaWT
+import pl.writeonly.jswt.scaladsl.XScalaWT._
+import pl.writeonly.jswt.scaladsl.XScalaWTBinding._
+import pl.writeonly.jswt.scaladsl.XScalaWTBinding
+import pl.writeonly.jswt.scaladsl.XScalaWT
 
 object DataBindingMain {
   def main(args : Array[String]) = {

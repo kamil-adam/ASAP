@@ -8,16 +8,16 @@
  * Contributors:
  *     David Orme - initial API and implementation
  *******************************************************************************/
-package pl.writeonly.xscalawt
+//package pl.writeonly.jswt.scaladsl
 package pl.writeonly.asap.apps.jswt
 
-import XScalaWT._
-import Assignments._
+import pl.writeonly.jswt.scaladsl.XScalaWT._
+import pl.writeonly.jswt.scaladsl.XScalaWT.Assignments._
 import org.eclipse.swt.layout._
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.events._
 import org.eclipse.swt.SWT
-import pl.writeonly.xscalawt.XScalaWT
+import pl.writeonly.jswt.scaladsl.XScalaWT
 
 /*
  * What's left?

@@ -8,19 +8,19 @@
  * Contributors:
  *     David Orme - initial API and implementation
  *******************************************************************************/
-package pl.writeonly.xscalawt
+//package pl.writeonly.jswt.scaladsl
 package pl.writeonly.asap.apps.jswt
 
-import pl.writeonly.xscalawt.XScalaWT._
-import XScalaWTForms._
-import Assignments._
+import pl.writeonly.jswt.scaladsl.XScalaWT._
+import pl.writeonly.jswt.scaladsl.XScalaWTForms._
+import pl.writeonly.jswt.scaladsl.XScalaWT.Assignments._
 import org.eclipse.swt.SWT
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.layout._
 import org.eclipse.swt.events._
 import org.eclipse.swt.graphics._
 import scala.List
-import pl.writeonly.xscalawt.XScalaWTForms
+import pl.writeonly.jswt.scaladsl.XScalaWTForms
 
 object DataForm {
   

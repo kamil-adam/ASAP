@@ -1,8 +1,8 @@
 package pl.writeonly.asap.main.jswt
 
-import pl.writeonly.xscalawt.XScalaWT.Assignments._
-import pl.writeonly.xscalawt.XScalaWT._
-import pl.writeonly.xscalawt.XScalaWTBinding._
+import pl.writeonly.jswt.scaladsl.XScalaWT.Assignments._
+import pl.writeonly.jswt.scaladsl.XScalaWT._
+import pl.writeonly.jswt.scaladsl.XScalaWTBinding._
 
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.SWT

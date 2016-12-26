@@ -8,12 +8,12 @@
  * Contributors:
  *     David Orme - initial API and implementation
  *******************************************************************************/
-package pl.writeonly.xscalawt
+//package pl.writeonly.jswt.scaladsl
 package pl.writeonly.asap.apps.jswt
 
-import XScalaWT._
-import Assignments._
-import XJFace._
+import pl.writeonly.jswt.scaladsl.XScalaWT._
+import pl.writeonly.jswt.scaladsl.XScalaWT.Assignments._
+import pl.writeonly.jswt.scaladsl.XJFace._
 import org.eclipse.swt.layout._
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.events._
@@ -21,9 +21,9 @@ import org.eclipse.swt.SWT
 import org.eclipse.jface.viewers.ITreeContentProvider
 import org.eclipse.jface.viewers.IStructuredContentProvider
 import org.eclipse.jface.viewers.Viewer
-import pl.writeonly.xscalawt.XJFace
-import pl.writeonly.xscalawt.ProviderImplicits
-import pl.writeonly.xscalawt.XScalaWT
+import pl.writeonly.jswt.scaladsl.XJFace
+import pl.writeonly.jswt.scaladsl.ProviderImplicits
+import pl.writeonly.jswt.scaladsl.XScalaWT
 
 trait Place {
   def name: String
