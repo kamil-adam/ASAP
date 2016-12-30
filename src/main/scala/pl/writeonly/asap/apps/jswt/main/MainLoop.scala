@@ -2,7 +2,7 @@ package pl.writeonly.asap.apps.jswt.main
 
 import org.eclipse.swt.widgets.Text
 import pl.writeonly.xscalawt.YScalaWT._
-import pl.writeonly.asap.apps.jswt.main.bean.MainWindow
+import pl.writeonly.asap.apps.jswt.main.beans.MainWindow
 
 object MainLoop extends AppLogging {
 

@@ -1,6 +1,6 @@
 package pl.writeonly.asap.apps.jswt.main
 
-import pl.writeonly.asap.apps.jswt.main.bean.FacadeBean
+import pl.writeonly.asap.apps.jswt.main.beans.FacadeBean
 import com.google.inject.Guice
 import com.google.inject.AbstractModule
 import com.google.inject.Scopes;

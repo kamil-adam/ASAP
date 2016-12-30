@@ -21,7 +21,7 @@ import org.eclipse.swt.widgets.Shell
 import com.typesafe.scalalogging.StrictLogging
 
 import com.typesafe.scalalogging.StrictLogging
-import pl.writeonly.asap.apps.jswt.main.bean.MainWindow
+import pl.writeonly.asap.apps.jswt.main.beans.MainWindow
 
 object AppWindow extends AppLogging {
   val context = AppContext

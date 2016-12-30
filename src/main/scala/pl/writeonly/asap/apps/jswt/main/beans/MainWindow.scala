@@ -1,4 +1,4 @@
-package pl.writeonly.asap.apps.jswt.main.bean
+package pl.writeonly.asap.apps.jswt.main.beans
 
 import org.eclipse.swt.widgets.Shell
 import pl.writeonly.jswt.scaladsl.YScalaWT._
@@ -6,6 +6,8 @@ import pl.writeonly.jswt.scaladsl.XScalaWT._
 import pl.writeonly.jswt.scaladsl.XScalaWT.Assignments._
 import com.typesafe.scalalogging.StrictLogging
 import javax.inject.Inject
+import pl.writeonly.asap.apps.jswt.main.beans.faces.ConfigurationFace
+import pl.writeonly.asap.apps.jswt.main.beans.faces.ConfigurationFace
 
 
 //import pl.writeonly.jswt.scaladsl.XScalaWT._
@@ -14,7 +16,7 @@ import javax.inject.Inject
 trait MainWindow extends Runnable with StrictLogging {
 
   @Inject var mainFace: Facade = _
-
+  @Inject var configurationFace: ConfigurationFace = _
 
   def run() = {
 
@@ -28,6 +30,7 @@ trait MainWindow extends Runnable with StrictLogging {
             fileDialogSave(mainFace.save = _),
       string,
       tabFolder(
+        configurationFace()
       ))(parent)
   }
 

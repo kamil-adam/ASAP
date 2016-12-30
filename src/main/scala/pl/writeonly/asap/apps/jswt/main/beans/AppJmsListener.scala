@@ -1,4 +1,4 @@
-package pl.writeonly.asap.apps.jswt.main.bean
+package pl.writeonly.asap.apps.jswt.main.beans
 
 import javax.jms.BytesMessage
 import javax.jms.MapMessage

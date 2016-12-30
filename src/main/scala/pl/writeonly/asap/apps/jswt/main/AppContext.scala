@@ -5,17 +5,18 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
-import pl.writeonly.asap.apps.jswt.main.bean.FacadeBean
+import pl.writeonly.asap.apps.jswt.main.beans.FacadeBean
 import org.springframework.jms.core.JmsTemplate
 import javax.jms.ConnectionFactory
 import org.springframework.jms.connection.SingleConnectionFactory
 import org.apache.activemq.ActiveMQConnectionFactory
-import pl.writeonly.asap.apps.jswt.main.bean.Facade
-import pl.writeonly.asap.apps.jswt.main.bean.AppJmsListener
+import pl.writeonly.asap.apps.jswt.main.beans.Facade
+import pl.writeonly.asap.apps.jswt.main.beans.AppJmsListener
+import pl.writeonly.asap.apps.jswt.main.beans.faces.ConfigurationFace
 
 object AppContext extends AppLogging {
   //  val context: ApplicationContext = new ClassPathXmlApplicationContext("applicationContext.xml")
-  val context: ApplicationContext = new AnnotationConfigApplicationContext(classOf[AppConfig], classOf[JmsConfig])
+  val context: ApplicationContext = new AnnotationConfigApplicationContext(classOf[AppConfig], classOf[JmsConfig], classOf[FaceConfig])
 
   def appWindow = context.getBean("AppWindow").asInstanceOf[AppWindow]
   def mainLoop = context.getBean("MainLoop").asInstanceOf[MainLoop]
@@ -59,5 +60,11 @@ class JmsConfig {
   @Bean
   def targetConnectionFactory = new ActiveMQConnectionFactory("vm://localhost")
 
+}
+
+@Configuration
+class FaceConfig {
+  @Bean
+  def ConfigurationFace = new ConfigurationFace
 }
 
