@@ -1,4 +1,4 @@
-package pl.writeonly.xscalawt
+package pl.writeonly.asap.apps.jswt.loop
 
 import pl.writeonly.jswt.scaladsl.XScalaWT.Assignments._
 import pl.writeonly.jswt.scaladsl.XScalaWT.button
