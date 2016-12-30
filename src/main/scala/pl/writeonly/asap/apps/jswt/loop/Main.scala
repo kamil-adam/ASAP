@@ -1,9 +1,8 @@
-package pl.writeonly.asap.apps.jswt.main
+package pl.writeonly.asap.apps.jswt.loop
 
 import pl.writeonly.jswt.scaladsl.XScalaWT.Assignments._
 import pl.writeonly.jswt.scaladsl.XScalaWT._
 import pl.writeonly.jswt.scaladsl.XScalaWTBinding._
-
 import org.eclipse.swt.widgets._
 import org.eclipse.swt.SWT
 import org.eclipse.swt.events.SelectionEvent
