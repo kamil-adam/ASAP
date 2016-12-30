@@ -11,7 +11,7 @@
 //package pl.writeonly.jswt.scaladsl
 package pl.writeonly.asap.apps.jswt.binding
 
-import reflect.BeanProperty
+import scala.beans.BeanProperty
 
 class LoginViewModel {
   @BeanProperty

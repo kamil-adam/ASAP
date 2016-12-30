@@ -1,4 +1,4 @@
-package pl.writeonly.asap.main.jswt
+package pl.writeonly.asap.apps.jswt.main
 
 import pl.writeonly.jswt.scaladsl.XScalaWT.Assignments._
 import pl.writeonly.jswt.scaladsl.XScalaWT._

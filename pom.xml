@@ -3,22 +3,22 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pl.writeonly</groupId>
 
-	<artifactId>ASAP</artifactId>
+	<artifactId>asap</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>2-SNAPSHOT</version>
 
 	<properties>
 		<encoding>UTF-8</encoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
-		<scala.version>2.10.0</scala.version>
+		<scala.version>2.11.8</scala.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
-			<groupId>pl.writeonly.jswt</groupId>
+			<groupId>pl.writeonly</groupId>
 			<artifactId>jswt</artifactId>
-			<version>1-SNAPSHOT</version>
+			<version>2-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>

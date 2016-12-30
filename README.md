@@ -1,2 +1,2 @@
 # ASAP
-A Scala Aplication
+A Scala Application
