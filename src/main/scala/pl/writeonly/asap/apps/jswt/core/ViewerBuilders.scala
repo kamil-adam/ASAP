@@ -9,7 +9,7 @@
  *     David Orme - initial API and implementation
  *******************************************************************************/
 //package pl.writeonly.jswt.scaladsl
-package pl.writeonly.asap.apps.jswt
+package pl.writeonly.asap.apps.jswt.core
 
 import pl.writeonly.jswt.scaladsl.XScalaWT._
 import pl.writeonly.jswt.scaladsl.XScalaWT.Assignments._
