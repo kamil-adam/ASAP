@@ -6,8 +6,7 @@ import pl.writeonly.jswt.scaladsl.XScalaWT._
 import pl.writeonly.jswt.scaladsl.XScalaWT.Assignments._
 import com.typesafe.scalalogging.StrictLogging
 import javax.inject.Inject
-import pl.writeonly.asap.apps.jswt.main.beans.faces.ConfigurationFace
-import pl.writeonly.asap.apps.jswt.main.beans.faces.ConfigurationFace
+import pl.writeonly.asap.apps.jswt.main.beans.faces.CommandFace
 
 
 //import pl.writeonly.jswt.scaladsl.XScalaWT._
@@ -16,7 +15,7 @@ import pl.writeonly.asap.apps.jswt.main.beans.faces.ConfigurationFace
 trait MainWindow extends Runnable with StrictLogging {
 
   @Inject var mainFace: Facade = _
-  @Inject var configurationFace: ConfigurationFace = _
+  @Inject var commandFace: CommandFace = _
 
   def run() = {
 
@@ -30,7 +29,7 @@ trait MainWindow extends Runnable with StrictLogging {
             fileDialogSave(mainFace.save = _),
       string,
       tabFolder(
-        configurationFace()
+        commandFace()
       ))(parent)
   }
 

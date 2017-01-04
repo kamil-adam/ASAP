@@ -12,7 +12,7 @@ import org.springframework.jms.connection.SingleConnectionFactory
 import org.apache.activemq.ActiveMQConnectionFactory
 import pl.writeonly.asap.apps.jswt.main.beans.Facade
 import pl.writeonly.asap.apps.jswt.main.beans.AppJmsListener
-import pl.writeonly.asap.apps.jswt.main.beans.faces.ConfigurationFace
+import pl.writeonly.asap.apps.jswt.main.beans.faces.CommandFace
 
 object AppContext extends AppLogging {
   //  val context: ApplicationContext = new ClassPathXmlApplicationContext("applicationContext.xml")
@@ -65,6 +65,6 @@ class JmsConfig {
 @Configuration
 class FaceConfig {
   @Bean
-  def ConfigurationFace = new ConfigurationFace
+  def CommandFace = new CommandFace
 }
 

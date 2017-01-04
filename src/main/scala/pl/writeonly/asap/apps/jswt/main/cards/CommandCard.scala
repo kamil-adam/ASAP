@@ -15,36 +15,27 @@ import pl.writeonly.jswt.scaladsl.XScalaWT.text
 import pl.writeonly.jswt.scaladsl.XScalaWT.textPasswd
 import pl.writeonly.jswt.scaladsl.XScalaWT.vertical
 
-import pl.writeonly.asap.apps.jswt.main.beans.faces.ConfigurationFace
+import pl.writeonly.asap.apps.jswt.main.beans.faces.CommandFace
 import pl.writeonly.xscalawt.YScalaWT.textToString
 
-object ConfigurationCard {
-  def apply(configuration: ConfigurationFace) = {
+object CommandCard {
+  def apply(command: CommandFace) = {
 
     //config
-    var username: Text = null
-    var password: Text = null
-    var confirm: Text = null
     var state: Label = null
 
     composite(
-      tabItem("Configuration"),
+      tabItem("Command"),
       composite(
         fillLayout(vertical),
         composite(
           fillLayout(),
-          label("username"),
-          text(username = _),
-          label("password"),
-          textPasswd(password = _),
-          label("confirm"),
-          textPasswd(confirm = _)),
-        composite(
-          fillLayout(),
-          button("register", { e: SelectionEvent => configuration.register(username, password, confirm) }),
-          button("login", { e: SelectionEvent => configuration.login(username, password) }),
-          button("logout", { e: SelectionEvent => configuration.logout }),
-          button("update", { e: SelectionEvent => configuration.merge })),
+          button("ok", { e: SelectionEvent => command.ok }),
+          button("error", { e: SelectionEvent => command.error }),
+          button("okFuture", { e: SelectionEvent => command.okFuture }),
+          button("errorFuture", { e: SelectionEvent => command.errorFuture }),
+          button("okActor", { e: SelectionEvent => command.okActor }),
+          button("errorActor", { e: SelectionEvent => command.errorActor })),
         composite(label(state = _))))
 
   }
